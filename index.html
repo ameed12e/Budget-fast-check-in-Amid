@@ -188,6 +188,180 @@
             <p class="sub" data-i18n="expSub"></p>
 
             <div class="mapwrap">
+                <!-- الخريطة محذوفة بالكامل -->
+                <div id="pins"></div>
+            </div>
+
+            <div id="postcard"></div>
+        </section>
+
+    </div>
+
+    <!-- Footer Action -->
+    <div class="action">
+        <button class="cta" id="cta">התחלת צ'ק‑אין</button>
+    </div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="app.js"></script>
+
+</body>
+</html>    <!-- Steps -->
+    <div class="steps">
+        <div class="st" data-step="1"><div class="bar"></div><span data-i18n="step1"></span></div>
+        <div class="st" data-step="2"><div class="bar"></div><span data-i18n="step2"></span></div>
+        <div class="st" data-step="3"><div class="bar"></div><span data-i18n="step3"></span></div>
+        <div class="st" data-step="4"><div class="bar"></div><span data-i18n="step4"></span></div>
+    </div>
+
+    <!-- Screens Wrapper -->
+    <div class="screenwrap">
+
+        <!-- ENTRY SCREEN -->
+        <section id="s-entry" class="screen active">
+            <span class="eyebrow ok"><span class="dot"></span><span data-i18n="scanTag"></span></span>
+            <h1 data-i18n="entryTitle"></h1>
+            <p class="sub" data-i18n="entrySub"></p>
+
+            <div class="booking">
+                <div class="scanline">
+                    <span data-i18n="scanFrom"></span>
+                </div>
+
+                <div class="conf">BUD‑IL‑7739204</div>
+
+                <div class="rowset">
+                    <div>
+                        <div class="k" data-i18n="bkVehicle"></div>
+                        <div class="v">Group F</div>
+                    </div>
+                    <div>
+                        <div class="k" data-i18n="bkLoc"></div>
+                        <div class="v" data-i18n="bkLocal"></div>
+                    </div>
+                    <div>
+                        <div class="k" data-i18n="bkPick"></div>
+                        <div class="v">02 Aug · 14:30</div>
+                    </div>
+                    <div>
+                        <div class="k" data-i18n="bkDrop"></div>
+                        <div class="v">06 Aug · 11:00</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RULES SCREEN -->
+        <section id="s-rules" class="screen">
+            <span class="eyebrow"><span class="dot"></span><span data-i18n="rulesTag"></span></span>
+            <h1 data-i18n="rulesTitle"></h1>
+            <p class="sub" data-i18n="rulesSub"></p>
+
+            <div class="ackhint">
+                <span class="count" id="ackcount">0/6</span>
+                <span data-i18n="ackHint"></span>
+            </div>
+
+            <div id="rules-list"></div>
+        </section>
+
+        <!-- FORM SCREEN -->
+        <section id="s-form" class="screen">
+            <span class="eyebrow"><span class="dot"></span><span data-i18n="formTag"></span></span>
+            <h1 data-i18n="formTitle"></h1>
+
+            <div class="field half">
+                <label data-i18n="fFirst"></label>
+                <input id="firstName">
+            </div>
+
+            <div class="field half">
+                <label data-i18n="fLast"></label>
+                <input id="lastName">
+            </div>
+
+            <div class="field">
+                <label data-i18n="fld"></label>
+                <input id="passport">
+            </div>
+
+            <div class="field half">
+                <label data-i18n="fDob"></label>
+                <input type="date" id="dob">
+            </div>
+
+            <div class="field half">
+                <label data-i18n="fPassCountry"></label>
+                <input id="passCountry">
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="grouplabel" data-i18n="grpAddress"></div>
+
+            <div class="field">
+                <label data-i18n="fStreet"></label>
+                <input id="street">
+            </div>
+
+            <div class="field half">
+                <label data-i18n="fCity"></label>
+                <input id="city">
+            </div>
+
+            <div class="field half">
+                <label data-i18n="fCountry"></label>
+                <input id="country">
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="grouplabel" data-i18n="grpContact"></div>
+
+            <div class="field">
+                <label data-i18n="fPhone"></label>
+                <input id="phone">
+            </div>
+
+            <div class="field">
+                <label data-i18n="fEmail"></label>
+                <input id="email">
+            </div>
+        </section>
+
+        <!-- REVIEW SCREEN -->
+        <section id="s-review" class="screen">
+            <span class="eyebrow"><span class="dot"></span><span data-i18n="revTag"></span></span>
+            <h1 data-i18n="revTitle"></h1>
+            <p class="sub" data-i18n="revSub"></p>
+
+            <div class="rev" id="reviewBox"></div>
+        </section>
+
+        <!-- DONE SCREEN -->
+        <section id="s-done" class="screen">
+            <div class="done-hero">
+                <div class="check"></div>
+                <span class="eyebrow ok"><span class="dot"></span><span data-i18n="doneTag"></span></span>
+                <h1 data-i18n="doneTitle"></h1>
+                <p class="sub" data-i18n="doneSub"></p>
+            </div>
+
+            <div class="ticket">
+                <div class="cap" data-i18n="codeLbl"></div>
+                <div class="code" id="code">BGN‑0000</div>
+            </div>
+        </section>
+
+        <!-- EXPLORE SCREEN -->
+        <section id="s-explore" class="screen">
+            <span class="eyebrow"><span class="dot"></span><span data-i18n="expTag"></span></span>
+            <h1 data-i18n="expTitle"></h1>
+            <p class="sub" data-i18n="expSub"></p>
+
+            <div class="mapwrap">
 
                 <!-- ضع هنا كود الـ SVG الحقيقي -->
                 <!-- مثال:
