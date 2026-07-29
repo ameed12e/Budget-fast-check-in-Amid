@@ -252,3 +252,4 @@ function generateCode() {
 setLang("he");
 showScreen(1);
 renderPins();
+<script src="app.js"></script>
