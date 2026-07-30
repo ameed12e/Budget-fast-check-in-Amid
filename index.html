@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Budget Fast Check-in Demo</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="phone" id="app">
+
+    <!-- Top Bar -->
+    <div class="topbar">
+        <div class="brand">
+            <span class="mark"><span>B</span></span>
+            <b>Budget</b>
+        </div>
+        <div class="lang">
+            <button onclick="setLang('he')" id="lang-he" class="on">HE</button>
+            <button onclick="setLang('en')" id="lang-en">EN</button>
+        </div>
+    </div>
+
+    <!-- Demo Pill -->
+    <div class="demo-pill" data-i18n="demoPill"></div>
+
+    <!-- Steps -->
+    <div class="steps">
+        <div class="st" data-step="1"><div class="bar"></div><span data-i18n="step1"></span></div>
+        <div class="st" data-step="2"><div class="bar"></div><span data-i18n="step2"></span></div>
+        <div class="st" data-step="3"><div class="bar"></div><span data-i18n="step3"></span></div>
+        <div class="st" data-step="4"><div class="bar"></div><span data-i18n="step4"></span></div>
+    </div>
+
+    <!-- Screens -->
+    <div class="screenwrap">
+
+        <!-- ENTRY -->
+        <section id="s-entry" class="screen active">
+            <span class="eyebrow ok"><span class="dot"></span><span data-i18n="scanTag"></span></span>
+            <h1 data-i18n="entryTitle"></h1>
+            <p class="sub" data-i18n="entrySub"></p>
+            <div class="booking">
+                <div class="scanline"><span data-i18n="scanFrom"></span></div>
+                <div class="conf">BUD-IL-7739204</div>
+                <div class="rowset">
+                    <div><div class="k" data-i18n="bkVehicle"></div><div class="v">Group F</div></div>
+                    <div><div class="k" data-i18n="bkLoc"></div><div class="v" data-i18n="bkLocal"></div></div>
+                    <div><div class="k" data-i18n="bkPick"></div><div class="v">02 Aug · 14:30</div></div>
+                    <div><div class="k" data-i18n="bkDrop"></div><div class="v">06 Aug · 11:00</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RULES -->
+        <section id="s-rules" class="screen">
+            <span class="eyebrow"><span class="dot"></span><span data-i18n="rulesTag"></span></span>
+            <h1 data-i18n="rulesTitle"></h1>
+            <p class="sub" data-i18n="rulesSub"></p>
+            <div class="ackhint">
+                <span class="count" id="ackcount">0/6</span>
+                <span data-i18n="ackHint"></span>
+            </div>
+            <div id="rules-list"></div>
+        </section>
+
+        <!-- FORM -->
+        <section id="s-form" class="screen">
+            <span class="eyebrow"><span class="dot"></span><span data-i18n="formTag"></span></span>
+            <h1 data-i18n="formTitle"></h1>
+            <div class="hint" data-i18n="formHint"></div>
+
+            <div class="field half"><label data-i18n="fFirst"></label><input id="firstName" value="JOHN"></div>
+            <div class="field half"><label data-i18n="fLast"></label><input id="lastName" value="MILLER"></div>
+            <div class="field"><label data-i18n="fld"></label><input id="passport" value="X1234567"></div>
+            <div class="field half"><label data-i18n="fDob"></label><input type="date" id="dob" value="1988-05-14"></div>
+            <div class="field half"><label data-i18n="fPassCountry"></label><input id="passCountry" value="USA"></div>
+
+            <div class="divider"></div>
+            <div class="grouplabel" data-i18n="grpAddress"></div>
+            <div class="field"><label data-i18n="fStreet"></label><input id="street" value="210 MAIN ST"></div>
+            <div class="field half"><label data-i18n="fCity"></label><input id="city" value="BOSTON"></div>
+            <div class="field half"><label data-i18n="fCountry"></label><input id="country" value="USA"></div>
+
+            <div class="divider"></div>
+            <div class="grouplabel" data-i18n="grpContact"></div>
+            <div class="field"><label data-i18n="fPhone"></label><input id="phone" value="+1 617 555 0142"></div>
+            <div class="field"><label data-i18n="fEmail"></label><input id="email" value="JOHN.MILLER@EMAIL.COM"></div>
+        </section>
+
+        <!-- REVIEW -->
+        <section id="s-review" class="screen">
+            <span class="eyebrow"><span class="dot"></span><span data-i18n="revTag"></span></span>
+            <h1 data-i18n="revTitle"></h1>
+            <p class="sub" data-i18n="revSub"></p>
+            <div class="rev" id="reviewBox"></div>
+        </section>
+
+        <!-- DONE -->
+        <section id="s-done" class="screen">
+            <div class="done-hero">
+                <div class="check"></div>
+                <span class="eyebrow ok"><span class="dot"></span><span data-i18n="doneTag"></span></span>
+                <h1 data-i18n="doneTitle"></h1>
+                <p class="sub" data-i18n="doneSub"></p>
+            </div>
+            <div class="ticket">
+                <div class="cap" data-i18n="codeLbl"></div>
+                <div class="code" id="code">BGN-0000</div>
+            </div>
+            <div class="done-actions">
+                <button class="cta secondary" id="exploreBtn" data-i18n="expOpen"></button>
+                <button class="ghostbtn" id="restartBtn" data-i18n="restart"></button>
+            </div>
+        </section>
+
+        <!-- EXPLORE -->
+        <section id="s-explore" class="screen">
+            <span class="eyebrow"><span class="dot"></span><span data-i18n="expTag"></span></span>
+            <h1 data-i18n="expTitle"></h1>
+            <p class="sub" data-i18n="expSub"></p>
+            <div class="mapwrap">
+                <svg class="mapsvg" viewBox="0 0 200 240" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs><linearGradient id="land" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e7d9a6"/><stop offset="1" stop-color="#c3cd8f"/></linearGradient></defs>
+                    <rect width="200" height="240" fill="#e9ecdf"/>
+                    <path d="M0,0 L70,24 L66,30 L66,40 L56,44 L59,54 L55,70 L50,86 L44,104 L0,118 Z" fill="#bfe1ef"/>
+                    <path d="M96,231 L116,231 L106,240 Z" fill="#bfe1ef"/>
+                    <path d="M116,8 L130,28 L140,60 L150,92 L150,150 L158,168 L150,196 L140,206 L128,214 L106,234 L92,206 L82,184 L74,162 L66,140 L58,120 L48,112 L44,104 L50,86 L55,70 L59,54 L56,44 L66,40 L66,30 L70,24 L90,16 L102,10 Z" fill="url(#land)" stroke="#b7a86a" stroke-width="1.1"/>
+                    <ellipse cx="139" cy="72" rx="5.5" ry="8" fill="#79bce0"/>
+                    <ellipse cx="151" cy="173" rx="5" ry="22" fill="#79bce0"/>
+                </svg>
+                <span class="sealbl">Mediterranean</span>
+                <div id="pins"></div>
+            </div>
+            <div id="postcard"></div>
+            <p class="pc-note" data-i18n="expNote"></p>
+            <button class="ghostbtn" id="backBtn" data-i18n="expBack"></button>
+        </section>
+
+    </div>
+
+    <!-- Footer Action -->
+    <div class="action" id="action">
+        <button class="cta" id="cta"></button>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
