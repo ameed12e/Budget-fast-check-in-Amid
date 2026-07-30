@@ -57,6 +57,60 @@ const T = {
     expNote: "Demo: illustrations. In the live app — real approved photos.",
     restart: "Run the demo again",
     ctaStart: "Start check-in", ctaContinue: "Continue", ctaReview: "Review", ctaSend: "Send to Budget"
+  },
+  ru: {
+    demoPill: "Демо-версия · не подключено к реальной системе",
+    step1: "Бронь", step2: "Правила", step3: "Данные", step4: "Проверка",
+    scanTag: "Успешно отсканировано",
+    entryTitle: "Ваше бронирование загружено",
+    entrySub: "Пройдите регистрацию в телефоне до стойки.",
+    scanFrom: "Из подтверждения бронирования",
+    bkVehicle: "Автомобиль", bkLoc: "Локация", bkLocal: "Бен-Гурион (TLV)", bkPick: "Получение", bkDrop: "Возврат",
+    rulesTag: "Важно знать",
+    rulesTitle: "Перед продолжением",
+    rulesSub: "Шесть пунктов, чтобы договор оформился быстрее на стойке.",
+    ackHint: "Нажмите на каждое правило, чтобы подтвердить прочтение",
+    formTag: "Данные клиента",
+    formTitle: "Ваши данные",
+    formHint: "Заполняйте только на английском, ЗАГЛАВНЫМИ буквами — так агент обслужит вас быстро.",
+    fFirst: "Имя", fLast: "Фамилия", fld: "Номер паспорта", fDob: "Дата рождения",
+    fPassCountry: "Страна паспорта", fStreet: "Улица и дом", fCity: "Город", fCountry: "Страна",
+    grpAddress: "Домашний адрес", grpContact: "Контакты", fPhone: "Телефон", fEmail: "Эл. почта",
+    revTag: "Почти готово", revTitle: "Проверьте данные", revSub: "Убедитесь, что всё верно.",
+    doneTag: "Регистрация завершена", doneTitle: "Всё готово", doneSub: "Покажите этот номер агенту.",
+    codeLbl: "Номер подтверждения",
+    expTag: "Идеи для поездки", expTitle: "Пока вы ждёте", expSub: "Нажмите на точку, чтобы узнать больше.",
+    expOpen: "Пока вы ждёте — откройте Израиль", expBack: "Назад к подтверждению",
+    expNote: "В демо — иллюстрации. В реальном приложении — настоящие фото.",
+    restart: "Запустить демо снова",
+    ctaStart: "Начать регистрацию", ctaContinue: "Продолжить", ctaReview: "Проверить", ctaSend: "Отправить в Budget"
+  },
+  fr: {
+    demoPill: "Aperçu démo · non connecté à un vrai système",
+    step1: "Réservation", step2: "Règles", step3: "Vos infos", step4: "Confirmer",
+    scanTag: "Scanné avec succès",
+    entryTitle: "Votre réservation est chargée",
+    entrySub: "Terminez l'enregistrement sur votre téléphone avant le comptoir.",
+    scanFrom: "Depuis votre confirmation de réservation",
+    bkVehicle: "Véhicule", bkLoc: "Lieu", bkLocal: "Ben Gourion (TLV)", bkPick: "Prise", bkDrop: "Retour",
+    rulesTag: "Bon à savoir",
+    rulesTitle: "Avant de continuer",
+    rulesSub: "Six points pour que votre contrat s'ouvre plus vite au comptoir.",
+    ackHint: "Touchez chaque règle pour confirmer que vous l'avez lue",
+    formTag: "Coordonnées du client",
+    formTitle: "Vos informations",
+    formHint: "Remplissez en anglais uniquement, en MAJUSCULES — pour un service rapide.",
+    fFirst: "Prénom", fLast: "Nom", fld: "Numéro de passeport", fDob: "Date de naissance",
+    fPassCountry: "Pays du passeport", fStreet: "Rue", fCity: "Ville", fCountry: "Pays",
+    grpAddress: "Adresse", grpContact: "Contact", fPhone: "Téléphone", fEmail: "E-mail",
+    revTag: "Presque terminé", revTitle: "Vérifiez vos infos", revSub: "Assurez-vous que tout est correct.",
+    doneTag: "Enregistrement terminé", doneTitle: "Tout est prêt", doneSub: "Montrez ce numéro à l'agent.",
+    codeLbl: "Numéro de confirmation",
+    expTag: "Idées de voyage", expTitle: "En attendant", expSub: "Touchez un lieu pour le découvrir.",
+    expOpen: "En attendant — découvrez Israël", expBack: "Retour à la confirmation",
+    expNote: "Démo : illustrations. Dans l'app réelle — vraies photos validées.",
+    restart: "Relancer la démo",
+    ctaStart: "Commencer l'enregistrement", ctaContinue: "Continuer", ctaReview: "Vérifier", ctaSend: "Envoyer à Budget"
   }
 };
 
@@ -77,6 +131,22 @@ const RULES = {
     "Bookings on a non-Israeli Budget site usually don't include VAT.",
     "The agent reviews your booking and tells you about any price change.",
     "The booking guarantees a vehicle category (group), not a specific model."
+  ],
+  ru: [
+    "Возьмите паспорт, водительские права и погранконтрольный талон.",
+    "Клиентам из США, отказывающимся от страховки через кредитную карту, нужно письмо от банка.",
+    "Граждане Израиля платят НДС, даже если живут за границей.",
+    "Бронирования на не-израильском сайте Budget обычно не включают НДС.",
+    "Агент проверяет бронирование и сообщает о любом изменении цены.",
+    "Бронирование гарантирует категорию автомобиля (группу), а не конкретную модель."
+  ],
+  fr: [
+    "Apportez votre passeport, votre permis et le formulaire de contrôle des frontières.",
+    "Les clients américains renonçant à l'assurance via carte de crédit ont besoin d'une lettre de l'émetteur.",
+    "Les citoyens israéliens paient la TVA, même s'ils vivent à l'étranger.",
+    "Les réservations sur un site Budget non israélien n'incluent généralement pas la TVA.",
+    "L'agent vérifie votre réservation et vous informe de tout changement de prix.",
+    "La réservation garantit une catégorie de véhicule (groupe), pas un modèle précis."
   ]
 };
 const RULE_COLORS = ["var(--navy)", "var(--red)", "var(--orange)", "var(--navy-soft)", "var(--ok)", "var(--yellow)"];
@@ -84,19 +154,26 @@ const RULE_COLORS = ["var(--navy)", "var(--red)", "var(--orange)", "var(--navy-s
 /* ---------- explore places ---------- */
 const PLACES = [
   { x:30,   y:20,   grad:["#2e7d32","#a9db55"], motif:"garden",
-    name:{he:"חיפה",en:"Haifa"}, blurb:{he:"מדרגות גנים ירוקות היורדות אל הים.",en:"Terraced gardens cascading down to the sea."} },
+    name:{he:"חיפה",en:"Haifa",ru:"Хайфа",fr:"Haïfa"},
+    blurb:{he:"מדרגות גנים ירוקות היורדות אל הים.",en:"Terraced gardens cascading down to the sea.",ru:"Террасные сады, спускающиеся к морю.",fr:"Jardins en terrasses descendant vers la mer."} },
   { x:69.5, y:30,   grad:["#1b6ca8","#8fd0c3"], motif:"water",
-    name:{he:"הכנרת",en:"Sea of Galilee"}, blurb:{he:"אגם מתוק שקט בצפון, מוקף גבעות ירוקות.",en:"A calm freshwater lake ringed by green hills."} },
+    name:{he:"הכנרת",en:"Sea of Galilee",ru:"Галилейское море",fr:"Lac de Tibériade"},
+    blurb:{he:"אגם מתוק שקט בצפון, מוקף גבעות ירוקות.",en:"A calm freshwater lake ringed by green hills.",ru:"Спокойное пресноводное озеро среди зелёных холмов.",fr:"Un lac paisible entouré de collines verdoyantes."} },
   { x:26.5, y:33,   grad:["#12a5c4","#ffd36b"], motif:"beach",
-    name:{he:"תל אביב",en:"Tel Aviv"}, blurb:{he:"חופים, בתי קפה ובאוהאוס לבן לאורך הים.",en:"Beaches, cafés and white Bauhaus by the sea."} },
+    name:{he:"תל אביב",en:"Tel Aviv",ru:"Тель-Авив",fr:"Tel-Aviv"},
+    blurb:{he:"חופים, בתי קפה ובאוהאוס לבן לאורך הים.",en:"Beaches, cafés and white Bauhaus by the sea.",ru:"Пляжи, кафе и белый Баухаус у моря.",fr:"Plages, cafés et Bauhaus blanc au bord de mer."} },
   { x:50,   y:46,   grad:["#c8974b","#f4e4b6"], motif:"dome",
-    name:{he:"ירושלים",en:"Jerusalem"}, blurb:{he:"העיר העתיקה, בנויה אבן ירושלמית זהובה.",en:"The Old City, built of golden Jerusalem stone."} },
+    name:{he:"ירושלים",en:"Jerusalem",ru:"Иерусалим",fr:"Jérusalem"},
+    blurb:{he:"העיר העתיקה, בנויה אבן ירושלמית זהובה.",en:"The Old City, built of golden Jerusalem stone.",ru:"Старый город из золотистого камня.",fr:"La vieille ville en pierre dorée."} },
   { x:75.5, y:70,   grad:["#6f93b6","#e9e3cf"], motif:"salt",
-    name:{he:"ים המלח",en:"Dead Sea"}, blurb:{he:"הנקודה הנמוכה בעולם — צפים בקלות על המים.",en:"Earth's lowest point — float effortlessly."} },
+    name:{he:"ים המלח",en:"Dead Sea",ru:"Мёртвое море",fr:"Mer Morte"},
+    blurb:{he:"הנקודה הנמוכה בעולם — צפים בקלות על המים.",en:"Earth's lowest point — float effortlessly.",ru:"Самая низкая точка Земли — легко лежать на воде.",fr:"Le point le plus bas de la Terre — on y flotte."} },
   { x:73,   y:77.5, grad:["#b5642f","#f2b96f"], motif:"mountain",
-    name:{he:"מצדה",en:"Masada"}, blurb:{he:"מבצר מדברי עתיק על צוק מעל ים המלח.",en:"An ancient desert fortress on a cliff."} },
+    name:{he:"מצדה",en:"Masada",ru:"Масада",fr:"Massada"},
+    blurb:{he:"מבצר מדברי עתיק על צוק מעל ים המלח.",en:"An ancient desert fortress on a cliff.",ru:"Древняя пустынная крепость на скале.",fr:"Ancienne forteresse du désert sur une falaise."} },
   { x:53,   y:96,   grad:["#0090ad","#00d6b0"], motif:"coral",
-    name:{he:"אילת",en:"Eilat"}, blurb:{he:"ים אדום, שוניות אלמוגים ודגים צבעוניים.",en:"Red Sea coral reefs and colourful fish."} }
+    name:{he:"אילת",en:"Eilat",ru:"Эйлат",fr:"Eilat"},
+    blurb:{he:"ים אדום, שוניות אלמוגים ודגים צבעוניים.",en:"Red Sea coral reefs and colourful fish.",ru:"Коралловые рифы и разноцветные рыбы.",fr:"Récifs coralliens et poissons colorés."} }
 ];
 
 function motifSVG(m){
